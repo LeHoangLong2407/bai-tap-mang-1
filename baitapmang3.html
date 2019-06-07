@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bài tập mảng 3</title>
+</head>
+<body>
+	<script>
+		var str = 'ABC';
+		var tren = 'ABCDEGHiKLMNOPQ';
+		var duoi = 'abcdeghiklmnopq';
+		var result = [];
+		for(var x=0; x<str.length; x++) {
+    		if(tren.indexOf(str[x]) !== -1) {
+      			result.push(str[x].toLowerCase());
+    		} else if(duoi.indexOf(str[x]) !== -1) {
+      			result.push(str[x].toUpperCase());
+    		} else {
+				result.push(str[x]);
+    		}
+  		}
+		console.log(result.join(''));
+	</script>
+</body>
+</html>
